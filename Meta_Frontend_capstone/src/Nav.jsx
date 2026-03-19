@@ -3,12 +3,19 @@ const Nav = () =>{
 
     return(
         <header>
-            <img src={"./public/logo.png"}></img>
-            <nav>
-                <ul>
-                    <li><a href=""></a></li>
-                </ul>
-            </nav>
+            <div class="nav-grid">
+                <img src={"logo.png"}></img>
+                <nav>
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Menu</a></li>
+                        <li><a href="">Reservations</a></li>
+                        <li><a href="">Order Online</a></li>
+                        <li><a href="">Login</a></li>
+                    </ul>
+                </nav>
+            </div>
         </header>
     )
 }

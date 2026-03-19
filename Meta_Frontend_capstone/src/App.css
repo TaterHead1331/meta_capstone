@@ -1,8 +1,94 @@
-#root {
-  max-width: 1280px;
+*{
+  padding:0;
+  box-sizing: border-box;
   margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+}
+:root{
+  --green:#495E57;
+  --yellow:#F4CE14;
+  --bgClor: #f2f2f2;
+  --yellowHover: #f7dc57;
+  --headingFont:"Markazi Text", serif;
+  --pFont:"Karla", sans-serif;
+  --mainHeading: 64px;
+  --subHeading: 40px;
+  --mediumHeading: 36px;
+  --smallHeading: 24px;
+  --smallerHeading: 20px;
+  --cardTitle: 18px;
+  --smallP: 14px;
+  --smallerP: 12px;
+  --shadow: 4px 5px 6px rgba(0, 0, 0, 0.25);
+  --hoverShadow: 4px 5px 10px rbga(0, 0, 0, 0.2);
+
 }
 
+header{
+  width: 100%;
+  background-color: white;
+  min-height: 10vh;
+  padding: 2rem;
+  /* text-align: center; */
+}
+
+.nav-grid{
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  justify-content: center;
+  align-items: center;
+}
+
+header li {
+  list-style: none;
+  display: inline;
+  padding: 0.5rem;
+}
+
+nav {
+  grid-column: 4/10;
+}
+
+.nav-grid img {
+  width: 100%;
+  grid-column: 2/3;
+}
+
+header a{
+  font: var(--headingFont);
+  font-size: var(--smallerHeading);
+  text-decoration: none;
+  color: black;
+  font-weight: 400;
+}
+
+header a:hover{
+  text-decoration: underline;
+  text-decoration-color: var(--yellow);
+  text-decoration-thickness: auto;
+}
+
+h1{
+  font: var(--headingFont);
+  font-size: var(--mainHeading);
+}
+
+h2{
+  font: var(--headingFont);
+  font-size: var(--subHeading);
+}
+
+h3{
+  font: var(--headingFont);
+  font-size: var(--mediumHeading);
+}
+
+h4{
+  font: var(--headingFont);
+  font-size: var(--smallHeading);
+}
+
+h5{
+  font: var(--headingFont);
+  font-size: var(--smallerHeading);
+}
 
