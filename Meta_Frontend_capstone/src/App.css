@@ -8,6 +8,7 @@
   --yellow:#F4CE14;
   --bgClor: #f2f2f2;
   --yellowHover: #f7dc57;
+  --highlight:#edefee;
   --headingFont:"Markazi Text", serif;
   --pFont:"Karla", sans-serif;
   --mainHeading: 64px;
@@ -21,8 +22,34 @@
   --shadow: 4px 5px 6px rgba(0, 0, 0, 0.25);
   --hoverShadow: 4px 5px 10px rbga(0, 0, 0, 0.2);
 
+  h1{
+  font: var(--headingFont);
+  font-size: var(--mainHeading);
+  color:var(--yellow)
 }
 
+h2{
+  font: var(--headingFont);
+  font-size: var(--subHeading);
+}
+
+h3{
+  font: var(--headingFont);
+  font-size: var(--mediumHeading);
+}
+
+h4{
+  font: var(--headingFont);
+  font-size: var(--smallHeading);
+}
+
+h5{
+  font: var(--headingFont);
+  font-size: var(--smallerHeading);
+}
+
+}
+/*======Begin Header Styling=========*/
 header{
   width: 100%;
   background-color: white;
@@ -67,28 +94,145 @@ header a:hover{
   text-decoration-thickness: auto;
 }
 
-h1{
-  font: var(--headingFont);
-  font-size: var(--mainHeading);
+/*======End Header Styling=========*/
+
+
+.flex-box{
+  display: flex;
+  justify-content: center;
 }
 
-h2{
-  font: var(--headingFont);
-  font-size: var(--subHeading);
+/*=======Begin Footer styling=======*/
+
+footer{
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  padding: 2rem;
+  background-color: var(--highlight);
 }
 
-h3{
-  font: var(--headingFont);
-  font-size: var(--mediumHeading);
+footer img{
+  grid-column: 2/4;
+  width: 40%;
 }
 
-h4{
-  font: var(--headingFont);
-  font-size: var(--smallHeading);
+footer h4{
+  color:var(--green);
+  font-weight: 400;
 }
 
-h5{
-  font: var(--headingFont);
-  font-size: var(--smallerHeading);
+.footer-links{
+  grid-column: 4 / span 8;
+  display: flex;
+   align-items: center;
+  width: 100%;
+  /* background-color: red; */
+}
+
+.footer-flex{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  width: 100%;
+}
+
+footer li{
+  list-style: none;
+  padding-top: 0.25rem;
+  font-family: var(--pFont);
+}
+
+footer a{
+  text-decoration: none;
+  color: black;
+}
+
+footer a:hover{
+  text-decoration: underline;
+  text-decoration-color: var(--yellow);
+  text-decoration-thickness: auto;
+}
+/*=======End Footer styling=======*/
+
+/*=======Begin Main styling=======*/
+main{
+  min-height: 100vh;
+}
+
+.heroSection{
+  background-color: var(--green);
+  height: 406px;
+  position: relative;
+}
+
+.heroSection p{
+  color:white;
+  padding-bottom: 2rem;
+  font-family: var(--pFont);
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.heroSection h3 {
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.heroSection h1{
+  margin-bottom: -10px;
+}
+
+.twelveColGrid{
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 20px;
+  padding-inline: 70px;
+}
+
+.heroLeft{
+  grid-column: 2 / span 5;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.heroBtn {
+  background-color: var(--yellow);
+  border-radius: 1rem;
+  box-shadow: var(--shadow);
+  color: black;
+  font-weight: 700;
+  font-family: var(--pFont);
+  min-height: 52px;
+  min-width: 200px;
+  padding-inline: 1rem;
+  transition: .28s ease;
+  cursor: pointer;
+}
+
+.heroBtn:hover{
+  background-color: var(--yellowHover);
+}
+
+.imgContainer {
+  grid-column: 7 / span 5;
+  height: 426px;
+  justify-self: center;
+  position: absolute;
+  top: 24px;
+  width:374px
+}
+
+.imgContainer img{
+  height: 100%;
+  width: 100%;
+  border-radius: 1rem;
+  box-shadow: var(--shadow);
+}
+
+.clipThreeTen {
+  max-width: 310px;
 }
 

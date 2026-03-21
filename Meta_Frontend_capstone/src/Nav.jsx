@@ -3,7 +3,7 @@ const Nav = () =>{
 
     return(
         <header>
-            <div class="nav-grid">
+            <div className="nav-grid">
                 <img src={"logo.png"}></img>
                 <nav>
                     <ul>
