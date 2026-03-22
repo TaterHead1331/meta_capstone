@@ -16,8 +16,12 @@ const MainTag = () =>{
                 </div>
                 <div className="imgContainer">
                     <img src={"header_image.jpg"} alt="" ></img>
-
                 </div>
+            </section>
+            <section className="specialsSection twelveColGrid">
+                <span className="sectionTitle">
+                    <h2>This Weeks Specials!</h2>
+                </span>
             </section>
         </main>
     )

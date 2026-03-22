@@ -236,3 +236,9 @@ main{
   max-width: 310px;
 }
 
+/*=======Start Specials Section==========*/
+.sectionTitle {
+  margin-top: 5rem;
+  grid-column: 1 / span 5;
+  text-align: left;
+}
