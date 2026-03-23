@@ -9,6 +9,9 @@
   --bgClor: #f2f2f2;
   --yellowHover: #f7dc57;
   --highlight:#edefee;
+  --sSalmon: #ee9972;
+  --sPeach: #fbdabb;
+  --sSeashell: #fdf4ee;
   --headingFont:"Markazi Text", serif;
   --pFont:"Karla", sans-serif;
   --mainHeading: 64px;
@@ -25,27 +28,32 @@
   h1{
   font: var(--headingFont);
   font-size: var(--mainHeading);
-  color:var(--yellow)
+  color:var(--yellow);
+  font-weight: 500;
 }
 
 h2{
   font: var(--headingFont);
   font-size: var(--subHeading);
+  font-weight: 500;
 }
 
 h3{
   font: var(--headingFont);
   font-size: var(--mediumHeading);
+  font-weight: 500;
 }
 
 h4{
   font: var(--headingFont);
   font-size: var(--smallHeading);
+  font-weight: 500;
 }
 
 h5{
   font: var(--headingFont);
   font-size: var(--smallerHeading);
+  font-weight: 500;
 }
 
 }
@@ -164,6 +172,7 @@ main{
   background-color: var(--green);
   height: 406px;
   position: relative;
+  padding-bottom: 7rem;
 }
 
 .heroSection p{
@@ -200,6 +209,7 @@ main{
 
 .heroBtn {
   background-color: var(--yellow);
+  border: none;
   border-radius: 1rem;
   box-shadow: var(--shadow);
   color: black;
@@ -237,8 +247,114 @@ main{
 }
 
 /*=======Start Specials Section==========*/
-.sectionTitle {
-  margin-top: 5rem;
+.specialsSection{
+  background-color: var(--highlight);
+  padding-top: 7rem;
+}
+.specials.sectionTitle {
   grid-column: 1 / span 5;
   text-align: left;
 }
+
+.specials.btn-div{
+  grid-column: 9 / span 3;
+}
+
+/*=======Specials Cards===========*/
+
+.specialsList{
+  grid-column: 2 / span 10 ;
+  margin: 2rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.card{
+  box-shadow: var(--shadow);
+  max-width: 265px;
+  border-radius: 6px 6px;
+}
+
+.order img{
+  width: 24px;
+}
+
+.order a{
+  text-decoration: none;
+  color: #495E57;
+  font-weight: 500;
+  font-family: var(--pFont);
+}
+
+.cardImg{
+  height: 185px;
+}
+
+.cardImg img{
+  height: 100%;
+  width: 100%;
+}
+
+.order, .cardDescription, .cardTitle {
+  padding:1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cardTitle p{
+  font-family: var(--pFont);
+  font-weight: 600;
+  color: var(--sSalmon);
+}
+
+/*==========Testimonials section========*/
+.testimonials{
+  background-color: var(--sSeashell);
+  padding-bottom: 190px;
+}
+
+.testimonials h3{
+  grid-column: span 12;
+  height: fit-content;
+  margin: 121px 0 4rem;
+  text-align: center;
+}
+
+.reviewsContainer{
+  grid-column: 3/span 8;
+  justify-content: space-between;
+  gap: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*=========testimonial cards==========*/
+.review-card{
+  box-shadow: var(--shadow);
+  background-color: #faf3f2;
+  border: 1px solid rgba(54, 54, 54, .25);
+  border-radius: 1rem;
+  max-width: 197px;
+  padding: 1.5rem 1.125rem 1.125rem;
+}
+
+.picAndUsername{
+  align-items: center;
+  display: flex;
+  gap: .5rem;
+  margin-bottom: .625rem;
+}
+
+.img-container{
+  border-radius: 50%;
+  height: 2rem;
+  overflow: hidden;
+  width: 2rem;
+}
+
+.img-container img{
+  height: 100%;
+  width: 100%;
+}
+
