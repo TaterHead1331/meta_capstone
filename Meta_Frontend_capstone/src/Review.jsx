@@ -13,7 +13,7 @@ const Review =(props)=>{
                 </div>
             </div>
             <div className="rating">
-                <p>*****</p>
+                <p>&#11088;&#11088;&#11088;&#11088;&#11088;</p>
             </div>
             <p>{props.text}</p>
         </div>
