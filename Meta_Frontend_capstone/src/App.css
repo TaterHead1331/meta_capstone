@@ -468,13 +468,16 @@ main{
   max-width: 500px;
 }
 
-.bookingForm label{
-  display: block;
+.container{
+  margin-bottom: 2rem;
 }
 
 .bookingForm .container label{
+  display: block;
   color: var(--green);
   font-size: 26px;
+  font-family: var(--headingFont);
+  font-weight: 500;
 }
 
 
@@ -494,10 +497,11 @@ main{
   width: 100%;
   background-color: var(--yellow);
   color: black;
-  border:none;
-  border-radius: 6px;
+  border: 1px solid black;
+  border-radius: 1rem;
   font-family: var(--pFont);
   font-weight: 600;
+  font-size: 20px;
 }
 
 .reservationBtn:hover{

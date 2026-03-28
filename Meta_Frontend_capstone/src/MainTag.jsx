@@ -1,10 +1,10 @@
-import Home from './Home'
+import Home from './pages/Home'
 
 const MainTag = () =>{
 
     return(
         <main>
-            <Home/>
+            
         </main>
     )
 }
