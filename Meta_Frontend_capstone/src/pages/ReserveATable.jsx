@@ -2,13 +2,13 @@ import {useState} from 'react';
 
 const ReserveATable =()=>{
 
-    const [formData, setFormData] = useState[{
+    const [formData, setFormData] = useState({
         firstName: "",
         lastName: "",
         date: "",
         time: "",
         occasion: "None",
-    }];
+    });
 
     const availableTimes = [
         "17:00",
@@ -70,7 +70,7 @@ const ReserveATable =()=>{
                             <option value="anniversary">Anniversary</option>
                         </select>
                     </div>
-                     <button className="reservationBtn" type="sumbit">Create Reservation</button>
+                     <button className="reservationBtn" type="submit">Create Reservation</button>
                 </form>
             </div>
         </div>
