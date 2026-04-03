@@ -6,6 +6,7 @@ import About from './pages/About.jsx';
 import Menu from './pages/Menu.jsx';
 import OrderOnline from './pages/OrderOnline.jsx';
 import Login from './pages/Login.jsx';
+import BookingConfirmation from './pages/BookingConfirmation.jsx';
 
 const router = createBrowserRouter([
     {
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
             {
                 path:'login',
                 element: <Login />
+            },
+            {
+                path:'booking-confirmation',
+                element:<BookingConfirmation />
             },
         ]
     },
