@@ -1,0 +1,1 @@
+This file contains my Meta Frontend Developer capstone. The main focus will be on the functionality of the Reserve a table form. I have created the home page and full navigation, however the other pages (aside from the actual reservation form and home page) are just placeholders to show that my React Router is working.
