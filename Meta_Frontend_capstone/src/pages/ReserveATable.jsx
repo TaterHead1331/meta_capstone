@@ -225,6 +225,7 @@ const ReserveATable = () => {
           </div>
 
           <button
+            aria-label="On Click"
             type="submit"
             className="reservationBtn"
             disabled={isSubmitting}

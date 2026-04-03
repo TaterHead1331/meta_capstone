@@ -14,7 +14,7 @@ const Home =()=>{
                              <h3>Chicago</h3>
                         </div>
                         <p>We are a family owned Mediterranean restaurant,  focused on traditional recipes served with a modern  twist.</p>
-                        <Link to="reservations"><button className="heroBtn">Reserve a Table</button></Link>
+                        <Link to="reservations"><button aria-label="On Click" className="heroBtn">Reserve a Table</button></Link>
                     </div>
                 </div>
                 <div className="imgContainer">
@@ -26,7 +26,7 @@ const Home =()=>{
                     <h2>This Weeks Specials!</h2>
                 </span>
                 <span className="specials btn-div">
-                    <Link to="menu"><button className="heroBtn">Online Menu</button></Link>
+                    <Link to="menu"><button aria-label="On Click" className="heroBtn">Online Menu</button></Link>
                 </span>
                 <article className="specialsList">
                     <Card image="greekSalad.jpg" dish="Greek Salad" price="12.99" description="The famous greek salad of crispy lettuce, peppers, olives and our Chicago style feta cheese, garnished with crunchy garlic and rosemary croutons."/>
